@@ -13,11 +13,10 @@
     "@wdio/spec-reporter": "^5.7.13",
     "@wdio/selenium-standalone-service": "^5.7.8",
     "webdriverio": "^5.7.13",
-    "chai": "^4.2.0"
-  },
-  "devDependencies": {
     "@wdio/local-runner": "^5.7.13",
     "@wdio/mocha-framework": "^5.7.13",
-    "@wdio/sync": "^5.7.13"
+    "@wdio/sync": "^5.7.13",
+    "chai": "^4.2.0",
+    "chai-webdriverio": "^1.0.0"
   }
 }

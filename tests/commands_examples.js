@@ -1,3 +1,4 @@
+
 describe("Commands examples", function() {
     it('text', function() {
         browser.url("http://ip-5236.sunline.net.ua:38015/customer-service-s-0?page_id=0");
@@ -55,7 +56,7 @@ describe("Commands examples", function() {
         console.log(`#4 product visible: ${displayed4}, exist: ${exist4}`);
     });
 
-    it.only('cookies', function () {
+    it('cookies', function () {
         browser.setWindowSize(600, 400)
         browser.url("http://ip-5236.sunline.net.ua:38015");
         console.log('COOKIES', browser.getCookies())
