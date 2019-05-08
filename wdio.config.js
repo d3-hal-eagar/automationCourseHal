@@ -5,7 +5,7 @@ exports.config = {
     port: 4444,
     path: "/wd/hub",
     // services: ["selenium-standalone"],
-    
+
     capabilities: [
         {
             browserName: "chrome",
