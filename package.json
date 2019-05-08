@@ -7,7 +7,8 @@
     "repl": "wdio repl safari",
     "multiremote": "wdio ./wdio.config.multiremote.js",
     "typescript-tests": "wdio ./wdio.config.debug.typescript.js",
-    "start": "wdio --init"
+    "start": "wdio --init",
+    "homework": "wdio ./homework.config.js"
   },
   "author": "Oleksandr Khotemskyi",
   "license": "ISC",
