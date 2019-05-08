@@ -26,7 +26,7 @@ describe("Smoke check", function() {
 
         let products = $$(".products");
 
-        redDuck = products.find(function(product) {
+        let redDuck = products.find(function(product) {
             return product.getText() === "Red duck";
         });
     });

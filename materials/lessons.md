@@ -5,7 +5,7 @@ Test automation using WebdriverIO:
 
 - Browser and WebElement objects, available methods. Modifying and state reading methods
 
-- Test Runners, Mocha+Chai. Cucumber+Chai. Test runner hooks
+- Test Runners, Mocha+Chai. Test runner hooks
 
 - Explicit and implicit waits. Wait conditions. Defining own
  wait conditions

@@ -1,16 +1,16 @@
 exports.config = {
-    specs: ["./tests/*.js"],
+    specs: ["./tests/commands_examples.js"],
     sync: true,
     services: ["selenium-standalone"],
     capabilities: [
         {
-            browserName: "chrome",
+            browserName: "chrome"
         }
     ],
     reporters: ["spec"],
     baseUrl: "http://the-internet.herokuapp.com",
     framework: "mocha",
-    logLevel: 'silent',
+    logLevel: "silent",
     mochaOpts: {
         ui: "bdd",
         timeout: 120000 // in ms
