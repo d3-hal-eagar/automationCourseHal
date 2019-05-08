@@ -1,5 +1,5 @@
 exports.config = {
-    specs: ["./tests/mocha_examples_5.js"],
+    specs: ["./tests/*.js"],
     sync: true,
     services: ["selenium-standalone"],
     capabilities: [
@@ -13,16 +13,22 @@ exports.config = {
     logLevel: "silent",
     mochaOpts: {
         ui: "bdd",
-        timeout: 120000, // in ms
-        grep: 'C124'
+        timeout: 120000 // in ms
     },
-
+    // Change global default timeout for all waitFor commands
+    // waitforTimeout: 6000,
+    before: function(capabilities, specs) {
+        // RECOMMENDED: if you use implicit waits, better to set them once for whole browser before tests
+        // browser.setTimeout({
+        //     implicit: 10000
+        // });
+    },
     /**
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
      */
     beforeSuite: function(suite) {
-        console.log("GLOBAL beforeSuite: Suite started");
+        // console.log("GLOBAL beforeSuite: Suite started");
     },
 
     /**
@@ -30,7 +36,7 @@ exports.config = {
      * @param {Object} test test details
      */
     beforeTest: function(test) {
-        console.log("GLOBAL beforeTest: Test started");
+        // console.log("GLOBAL beforeTest: Test started");
     },
 
     /**
@@ -38,13 +44,17 @@ exports.config = {
      * @param {Object} test test details
      */
     afterTest: function(test) {
-        console.log("GLOBAL afterTest: Test finished", test);
+        // console.log("GLOBAL afterTest: Test finished", test);
+        // RECOMMENDED: if you use implicit waits, better to reset them back to default after each test
+        // browser.setTimeout({
+        //     implicit: 10000
+        // });
     },
     /**
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
      */
     afterSuite: function(suite) {
-        console.log("GLOBAL afterSuite: Suite finished", suite);
+        // console.log("GLOBAL afterSuite: Suite finished", suite);
     }
 };

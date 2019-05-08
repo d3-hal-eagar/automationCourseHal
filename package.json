@@ -9,6 +9,7 @@
   "author": "Oleksandr Khotemskyi",
   "license": "ISC",
   "dependencies": {
+    "@types/wdio-sync": "",
     "@wdio/cli": "^5.7.13",
     "@wdio/spec-reporter": "^5.7.13",
     "@wdio/selenium-standalone-service": "^5.7.8",
