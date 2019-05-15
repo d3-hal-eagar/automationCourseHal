@@ -1,5 +1,5 @@
 exports.config = {
-    specs: ["./tests/*.js"],
+    specs: ["./tests/6_pageobjects_examples_4.js"],
     sync: true,
     services: ["selenium-standalone"],
     capabilities: [
@@ -8,7 +8,7 @@ exports.config = {
         }
     ],
     reporters: ["spec"],
-    baseUrl: "http://the-internet.herokuapp.com",
+    baseUrl: "http://ip-5236.sunline.net.ua:38015",
     framework: "mocha",
     logLevel: "silent",
     mochaOpts: {

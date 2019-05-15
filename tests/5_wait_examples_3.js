@@ -13,7 +13,7 @@ describe("Explicit waits", function() {
         // $("div#finish h4").waitForExist(6000);
         // // $('div').waitForExist()
         // // $('div').waitForEnabled()
-        // // $('div').waitForDisplayed(15000, false, 'Expected div to became invisible')
+        // // $('div').waitForDisplayed(15000, true, 'Expected div to became invisible')
 
         // console.log("Element exist?: ", $("div#finish h4").isExisting());
         // console.log("Element text:", $("div#finish h4").getText());
