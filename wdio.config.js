@@ -1,16 +1,24 @@
 exports.config = {
-    specs: ["./tests/6_pageobjects_examples_4.js"],
+    specs: ["./tests/3_commands_examples.js"],
     sync: true,
-    services: ["selenium-standalone"],
+    // hostname: 'ip-5236.sunline.net.ua',
+    port: 4444,
+    path: "/wd/hub",
+    // services: ["selenium-standalone"],
     capabilities: [
         {
-            browserName: "chrome"
+            browserName: "chrome",
+            // "goog:chromeOptions": {
+            //     // to run chrome headless the following flags are required
+            //     // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
+            //     args: ["--headless", "--disable-gpu"]
+            // }
         }
     ],
     reporters: ["spec"],
     baseUrl: "http://ip-5236.sunline.net.ua:38015",
     framework: "mocha",
-    logLevel: "silent",
+    logLevel: 'silent',
     mochaOpts: {
         ui: "bdd",
         timeout: 120000 // in ms
@@ -18,6 +26,11 @@ exports.config = {
     // Change global default timeout for all waitFor commands
     // waitforTimeout: 6000,
     before: function(capabilities, specs) {
+        // browser.addCommand("JSclick", function(selector) {
+        //     browser.execute(function(_selector) {
+        //         document.querySelector(_selector).click();
+        //     }, selector);
+        // });
         // RECOMMENDED: if you use implicit waits, better to set them once for whole browser before tests
         // browser.setTimeout({
         //     implicit: 10000

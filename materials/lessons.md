@@ -1,21 +1,22 @@
 Test automation using WebdriverIO:
-- Overviewing UI automation principles. Advantages and Disadvantages of using JavaScript for test automation. Preparing dev environment
 
-- Searching elements. CSS selectors. xPath selectors. Framework specific searching options. Collection of elements
+-   Overviewing UI automation principles. Advantages and Disadvantages of using JavaScript for test automation. Preparing dev environment
 
-- Browser and WebElement objects, available methods. Modifying and state reading methods
+-   Searching elements. CSS selectors. xPath selectors. Framework specific searching options. Collection of elements
 
-- Test Runners, Mocha+Chai. Test runner hooks
+-   Browser and WebElement objects, available methods. Modifying and state reading methods
 
-- Explicit and implicit waits. Wait conditions. Defining own
- wait conditions
+-   Test Runners, Mocha+Chai. Test runner hooks
 
-- PageObjects, PageComponents(Fragments). Iheritance and composition. Data provider
+-   Explicit and implicit waits. Wait conditions. Defining own
+    wait conditions
 
-- Low-level page manipulations. Executing JS on the page. Other features.
+-   PageObjects, PageComponents(Fragments). Iheritance and composition. Data provider
 
-- Configuration file. Setting up debug run. REPL. Tests Parallelization.
+-   Low-level page manipulations. Executing JS on the page. Other features. Configuration file
 
-- Reporters, junit xml, Alure Reports. Comparing to other test frameworks: ProtractorJS/WebDriverJS/CodeceptionJS/CypressIO
+-   Setting up debug run. WDIO REPL mode. Tests Parallelization. TypeScript.
+
+-   Reporters, junit xml, Alure Reports. Comparing to other test frameworks: ProtractorJS/WebDriverJS/CodeceptionJS/CypressIO
 
 9 lessons, 2 hours each. With homework

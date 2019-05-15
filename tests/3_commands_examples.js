@@ -1,6 +1,6 @@
 
 describe("Commands examples", function() {
-    it('text', function() {
+    it.only('text', function() {
         browser.url("http://ip-5236.sunline.net.ua:38015/customer-service-s-0?page_id=0");
 
         $('form[name="contact_form"] input[name="name"]').setValue('Alex')

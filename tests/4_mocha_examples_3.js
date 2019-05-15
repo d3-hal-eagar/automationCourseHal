@@ -60,5 +60,7 @@ describe(`Different checks`, function() {
         false.should.be.false;
         [(2, 1)].should.contain(1);
         "Some long string".should.contain("long");
+
+        $('div').getText().should.contain('test')
     });
 });
