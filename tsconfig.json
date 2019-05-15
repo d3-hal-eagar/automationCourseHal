@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "inlineSourceMap": true,
+    "outDir": "./built",
+    "allowJs": true,
+    //"lib": ["es2018"],
+    "types": ["@wdio/sync", "@types/mocha", "node", "./index.d.ts"]
+  },
+  "exclude": ["./node_modules/"]
+}

@@ -8,7 +8,6 @@ describe("Commands examples", function() {
         $('form[name="contact_form"] input[name="subject"]').setValue('Test Subject')
         $('form[name="contact_form"] textarea[name="message"]').setValue('Message text!')
 
-        
         $('form[name="contact_form"] button[name="send"]').click()
         
         let alertText = $('div.alert').getText()

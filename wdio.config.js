@@ -1,13 +1,15 @@
 exports.config = {
-    specs: ["./tests/3_commands_examples.js"],
+    specs: ["./tests/4_mocha_*.js"],
     sync: true,
     // hostname: 'ip-5236.sunline.net.ua',
     port: 4444,
     path: "/wd/hub",
     // services: ["selenium-standalone"],
+    
     capabilities: [
         {
             browserName: "chrome",
+            maxInstances: 4
             // "goog:chromeOptions": {
             //     // to run chrome headless the following flags are required
             //     // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
